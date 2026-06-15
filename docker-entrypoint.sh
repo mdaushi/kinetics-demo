@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+php artisan migrate --force
+php artisan db:seed --force
+
 php artisan config:clear
 php artisan route:clear
 
