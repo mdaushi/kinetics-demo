@@ -1,0 +1,8 @@
+# compose.yaml
+services:
+  frankenphp:
+    build:
+      context: .
+    entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+    ports:
+      - 8000
